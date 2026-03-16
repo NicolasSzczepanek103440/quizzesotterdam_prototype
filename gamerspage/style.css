@@ -1,0 +1,97 @@
+body {
+    overflow: hidden;
+}
+
+#titel {
+    display: flex;
+    border: 1px solid black;
+    width: 24vw;
+    height: 7vh;
+    font-size: 4em;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#center {
+    display: flex;
+    flex-direction: row;
+    background-color: red;
+}
+
+#informatiegamers {
+    width: 48vw;
+    height: 60vh;
+    background-color: gray;
+    margin-top: 10vh;
+    margin-left: 4vh;
+}
+
+#titelinfo {
+    display: flex;
+    width: 50%;
+    height: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    font-size: 4em;
+}
+
+#inhoud {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 98%;
+    margin-left: auto;
+    height: 65%;
+}
+
+#inhoud p {
+    width: 100%;
+    font-size: x-large;
+}
+
+#imagecolumn {
+    display: flex;
+    align-items: center;
+    gap: 3vh;
+    margin-left: auto;
+    margin-right: 20vh;
+    margin-top: 10vh;
+    flex-direction: column;
+    max-width: 475px;
+    height: 77vh;
+    background-color: purple;
+}
+
+.image {
+    display: flex;
+    background-color: red;
+    width: 100%;
+    height: 100%;
+}
+
+#buttoncorner {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 25vw;
+    height: 7vh;
+    top: 91vh;
+}
+
+.button {
+    width: 47%;
+    background-color: blueviolet;
+    font-size: 3em;
+}
+
+.button a {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
