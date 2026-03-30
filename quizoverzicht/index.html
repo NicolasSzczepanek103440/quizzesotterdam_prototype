@@ -5,18 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="../global_code/overzichtspagina.js" defer></script>
 </head>
-<body>
+<body onload="quizoverzicht()">
     <div id="titel">Gamer quiz overzicht</div>
     <div id="titel2">naam</div>
     <div id="titel3">-- / 10 vragen goed</div>
 
     <div id="buttoncorner">
-        <div class="button"><a href="/hoofdpagina/index.html">
-            <span>Stop</span></a>
+        <div class="button" onclick="stopquiz()"><a >
+            <span><u>Stop</u></span></a>
         </div>
-        <div id="buttonoverslaan"><a href="/quizvraag/index.html">
-            <span>Volgende vraag</span></a>
+        <div id="buttonoverslaan" onclick="quizpagina()"><a>
+            <span><u>Volgende vraag</u></span></a>
         </div>
     </div>
 </body>

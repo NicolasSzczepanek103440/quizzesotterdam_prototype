@@ -52,6 +52,7 @@
     width: 47%;
     background-color: gray;
     font-size: 3em;
+    cursor: pointer;
 }
 
 .button a {
@@ -69,6 +70,7 @@
     background-color: gray;
     width: 60%;
     font-size: 3em;
+    cursor: pointer;
 }
 
 #buttonoverslaan a {

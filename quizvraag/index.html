@@ -5,39 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <script src="/global_code/naam+quiz.js" defer></script>
+    <link rel="stylesheet" href="../global_code/naamdatabase.css"> <!-- naam database -->
+    <script src="../global_code/inquiz.js" defer></script>
 </head>
 <body>
+    <p class="naamdatabase">naam</p> <!-- Dit hoort onzichtbaar te zijn. -->
+
     <div id="titel">-- Quiz</div>
     <div id="titel2">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
-    <div id="foto1"><img src="/images/placeholderplaatje.webp"></div>
+    <div id="foto1"><img src="../images/placeholderplaatje.webp"></div>
 
     <div id="antwoordboxcontainer">
-        <div class="antwoordbox2" id="antwoord1">
+        <div class="antwoordbox2 correct" id="antwoord1" onclick="overzichtsPagina('goed')">
             <div class="nummer">1</div>
             <div class="antwoordinbox">Antwoord 1</div>
         </div>
-        <div class="antwoordbox2" id="antwoord2">
+        <div class="antwoordbox2" id="antwoord2" onclick="overzichtsPagina()">
             <div class="nummer">2</div>
             <div class="antwoordinbox">Antwoord 2</div>
         </div>
-        <div class="antwoordbox2" id="antwoord3">
+        <div class="antwoordbox2 false" id="antwoord3" onclick="overzichtsPagina()">
             <div class="nummer">3</div>
             <div class="antwoordinbox">Antwoord 3</div>
         </div>
-        <div class="antwoordbox2" id="antwoord4">
+        <div class="antwoordbox2 false" id="antwoord4" onclick="overzichtsPagina()">
             <div class="nummer">4</div>
             <div class="antwoordinbox">Antwoord 4</div>
         </div>
     </div>
 
     <div id="buttoncorner">
-        <div class="button"><a href="/hoofdpagina/index.html">
-            <span>Stop</span></a>
+        <div class="button" onclick="stopquiz()"><a>
+            <span><u>Stop</u></span></a>
         </div>
-        <div id="buttonoverslaan"><a href="/quizoverzicht/index.html">
-            <span>Vraag overslaan</span></a>
+        <div id="buttonoverslaan" onclick="overzichtsPagina()"><a >
+            <span><u>Vraag overslaan</u></span></a>
         </div>
     </div>
+    
 </body>
 </html>
