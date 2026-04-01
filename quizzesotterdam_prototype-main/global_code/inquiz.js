@@ -31,7 +31,7 @@ if (window.location == "http://127.0.0.1:5500/quizzesotterdam_prototype-main/qui
     activateQuizGamers(); // Activatie gamersquiz
 }
 
-// * Activatie gym/fitness quiz (NOG AFMAKEN)
+// * Activatie gym/fitness quiz
 function activateQuizGymfitness() {
     let titel = document.getElementById("titel");
     let vraag = document.getElementById("titel2");
@@ -130,6 +130,108 @@ function activateQuizGymfitness() {
         antwoord2.setAttribute("onclick", "overzichtsPagina('')");
         antwoord3.setAttribute("onclick", "overzichtsPagina('')");
         antwoord4.setAttribute("onclick", "overzichtsPagina('goed')");
+    }
+}
+
+// * Activatie gamers quiz
+function activateQuizGamers() {
+    let titel = document.getElementById("titel");
+    let vraag = document.getElementById("titel2");
+    window.alert(sessionStorage.questionsright);
+    window.alert(sessionStorage.countpagina);
+
+    titel.innerText = "Gamers quiz";
+
+    // Vraag 1 t/m 10
+    if (sessionStorage.countpagina == 0) {
+        vraag.innerText = "Vraag 1";
+
+        // Welke antwoorden goed zijn (antwoord 3)
+        antwoord1.setAttribute("onclick", "overzichtsPagina('')");
+        antwoord2.setAttribute("onclick", "overzichtsPagina('')");
+        antwoord3.setAttribute("onclick", "overzichtsPagina('goed')");
+        antwoord4.setAttribute("onclick", "overzichtsPagina('')");
+    }
+    if (sessionStorage.countpagina == 1) {
+        vraag.innerText = "Vraag 2";
+
+        // Welke antwoorden goed zijn (antwoord 1)
+        antwoord1.setAttribute("onclick", "overzichtsPagina('goed')");
+        antwoord2.setAttribute("onclick", "overzichtsPagina('')");
+        antwoord3.setAttribute("onclick", "overzichtsPagina('')");
+        antwoord4.setAttribute("onclick", "overzichtsPagina('')");
+    }
+    if (sessionStorage.countpagina == 2) {
+        vraag.innerText = "Vraag 3";
+
+        // Welke antwoorden goed zijn (antwoord 1)
+        antwoord1.setAttribute("onclick", "overzichtsPagina('goed')");
+        antwoord2.setAttribute("onclick", "overzichtsPagina('')");
+        antwoord3.setAttribute("onclick", "overzichtsPagina('')");
+        antwoord4.setAttribute("onclick", "overzichtsPagina('')");
+    }
+    if (sessionStorage.countpagina == 3) {
+        vraag.innerText = "Vraag 4";
+
+        // Welke antwoorden goed zijn (antwoord 2)
+        antwoord1.setAttribute("onclick", "overzichtsPagina('')");
+        antwoord2.setAttribute("onclick", "overzichtsPagina('goed')");
+        antwoord3.setAttribute("onclick", "overzichtsPagina('')");
+        antwoord4.setAttribute("onclick", "overzichtsPagina('')");
+    }
+    if (sessionStorage.countpagina == 4) {
+        vraag.innerText = "Vraag 5";
+
+        // Welke antwoorden goed zijn (antwoord 4)
+        antwoord1.setAttribute("onclick", "overzichtsPagina('')");
+        antwoord2.setAttribute("onclick", "overzichtsPagina('')");
+        antwoord3.setAttribute("onclick", "overzichtsPagina('')");
+        antwoord4.setAttribute("onclick", "overzichtsPagina('goed')");
+    }
+    if (sessionStorage.countpagina == 5) {
+        vraag.innerText = "Vraag 6";
+
+        // Welke antwoorden goed zijn (antwoord 3)
+        antwoord1.setAttribute("onclick", "overzichtsPagina('')");
+        antwoord2.setAttribute("onclick", "overzichtsPagina('')");
+        antwoord3.setAttribute("onclick", "overzichtsPagina('goed')");
+        antwoord4.setAttribute("onclick", "overzichtsPagina('')");
+    }
+    if (sessionStorage.countpagina == 6) {
+        vraag.innerText = "Vraag 7";
+
+        // Welke antwoorden goed zijn (antwoord 1)
+        antwoord1.setAttribute("onclick", "overzichtsPagina('goed')");
+        antwoord2.setAttribute("onclick", "overzichtsPagina('')");
+        antwoord3.setAttribute("onclick", "overzichtsPagina('')");
+        antwoord4.setAttribute("onclick", "overzichtsPagina('')");
+    }
+    if (sessionStorage.countpagina == 7) {
+        vraag.innerText = "Vraag 8";
+
+        // Welke antwoorden goed zijn (antwoord 4)
+        antwoord1.setAttribute("onclick", "overzichtsPagina('')");
+        antwoord2.setAttribute("onclick", "overzichtsPagina('')");
+        antwoord3.setAttribute("onclick", "overzichtsPagina('')");
+        antwoord4.setAttribute("onclick", "overzichtsPagina('goed')");
+    }
+    if (sessionStorage.countpagina == 8) {
+        vraag.innerText = "Vraag 9";
+
+        // Welke antwoorden goed zijn (antwoord 2)
+        antwoord1.setAttribute("onclick", "overzichtsPagina('')");
+        antwoord2.setAttribute("onclick", "overzichtsPagina('goed')");
+        antwoord3.setAttribute("onclick", "overzichtsPagina('')");
+        antwoord4.setAttribute("onclick", "overzichtsPagina('')");
+    }
+    if (sessionStorage.countpagina == 9) {
+        vraag.innerText = "Vraag 10";
+
+        // Welke antwoorden goed zijn (antwoord 2)
+        antwoord1.setAttribute("onclick", "overzichtsPagina('')");
+        antwoord2.setAttribute("onclick", "overzichtsPagina('goed')");
+        antwoord3.setAttribute("onclick", "overzichtsPagina('')");
+        antwoord4.setAttribute("onclick", "overzichtsPagina('')");
     }
 }
 

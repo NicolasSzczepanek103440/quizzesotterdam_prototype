@@ -25,15 +25,14 @@ function quizoverzicht() {
 // * Gebruiker wordt teruggestuurd naar quizpagina
 function quizpagina() {
     if (sessionStorage.soortquiz == "quiz_gymfitness") { // Gebruiker wordt teruggestuurd naar gym/fitness quizpagina
+        sessionStorage.countpagina++;
+        window.location = '../quizvraag/index.html?quiz=gymfitness';
+        
         // * Checkt op einde quiz, gebruiker wordt in zulke gevallen naar eindscore gebracht
-        if (sessionStorage.countpagina >= 9) { // VERDERWERKEN
-                window.alert("bleegh!!");
+        if (sessionStorage.countpagina >= 9) {
                 window.location = "../eindscore/index.html?quiz=gymfitness";
             }
         }
-        
-        sessionStorage.countpagina++;
-        window.location = '../quizvraag/index.html?quiz=gymfitness';
 
         
 
@@ -42,7 +41,7 @@ function quizpagina() {
         window.location = '../quizvraag/index.html?quiz=gamers';
 
         // * Checkt op einde quiz, gebruiker wordt in zulke gevallen naar eindscore gebracht
-        if (sessionStorage.countpagina == 9) {
+        if (sessionStorage.countpagina >= 9) {
                 window.location = "../eindscore/index.html?quiz=gamers";
             }
         }

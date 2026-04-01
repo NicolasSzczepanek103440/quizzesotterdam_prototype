@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="../global_code/leaderboard.js" defer></script>
 </head>
-<body>
+<body onload="vraag()">
     <div id="titel">Leaderboard</div>
     <div id="leaderboardback">
         <div class="quizbox">
@@ -21,7 +22,7 @@
                 <tbody>
                     <tr>
                         <td class="ranknummer">#1</td>
-                        <td></td>
+                        <td id="rank_quizgymfitness0"></td>
                     </tr>
                     <tr>
                         <td class="ranknummer">#2</td>

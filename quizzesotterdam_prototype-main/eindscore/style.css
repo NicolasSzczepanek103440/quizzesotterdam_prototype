@@ -43,6 +43,7 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 2vh;
+    border: 1px solid black;
 }
 
 #pic img {
@@ -66,6 +67,7 @@
     width: 47%;
     background-color: gray;
     font-size: 3em;
+    cursor: pointer;
 }
 
 .button a {
@@ -83,6 +85,7 @@
     background-color: gray;
     width: 50%;
     font-size: 3em;
+    cursor: pointer;
 }
 
 #buttonoverslaan a {
