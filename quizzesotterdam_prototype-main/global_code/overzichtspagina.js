@@ -1,16 +1,16 @@
 // In dit bestand staan de quizoverzichtsfuncties.
+
 let titel = document.getElementById("titel");
 let naam_in_overzichtspagina = document.getElementById("titel2");
 let vragengoed = document.getElementById("titel3");
 
 // * De quizoverzichtsfuncties worden geactiveerd
 function quizoverzicht() {
-    window.alert(sessionStorage.questionsright);
-    window.alert(sessionStorage.countpagina);
 
     // * Controleert welke quiz het is
-    if (window.location == "http://127.0.0.1:5500/quizzesotterdam_prototype-main/quizoverzicht/index.html?quiz_gymfitness") {
-        titel.innerText = "Gym/fitness quiz overzicht";
+    if (window.location == "http://127.0.0.1:5500/quizzesotterdam_prototype-main/quizoverzicht/index.html?quiz_gamers") {
+        titel.innerText = "Gamers overzicht";
+        vragengoed.innerText = `${sessionStorage.questionsright}/10 vragen goed`
     }
 
     if (window.location == "http://127.0.0.1:5500/quizzesotterdam_prototype-main/quizoverzicht/index.html?quiz_gymfitness") {
@@ -29,7 +29,7 @@ function quizpagina() {
         window.location = '../quizvraag/index.html?quiz=gymfitness';
         
         // * Checkt op einde quiz, gebruiker wordt in zulke gevallen naar eindscore gebracht
-        if (sessionStorage.countpagina >= 9) {
+        if (sessionStorage.countpagina >= 10) {
                 window.location = "../eindscore/index.html?quiz=gymfitness";
             }
         }
@@ -41,7 +41,7 @@ function quizpagina() {
         window.location = '../quizvraag/index.html?quiz=gamers';
 
         // * Checkt op einde quiz, gebruiker wordt in zulke gevallen naar eindscore gebracht
-        if (sessionStorage.countpagina >= 9) {
+        if (sessionStorage.countpagina >= 10) {
                 window.location = "../eindscore/index.html?quiz=gamers";
             }
         }

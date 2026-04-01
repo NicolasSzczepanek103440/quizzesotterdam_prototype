@@ -32,11 +32,11 @@ score.innerText = `${sessionStorage.questionsright}/10 vragen goed` // Score wor
 // * Zodra deze functie geactiveerd wordt, wordt de gebruiker naar de leaderboardpagina gestuurd
 function leaderboard() {
     if (sessionStorage.soortquiz == "quiz_gymfitness") {
-        window.location = "../leaderboard/index.html?quiz=gymfitness";
+        window.location = "../leaderboard/index.html";
     }
 
     if (sessionStorage.soortquiz == "quiz_gamers") {
-        window.location = "../leaderboard/index.html?quiz=gamers";
+        window.location = "../leaderboard/index.html";
     }
 }
 

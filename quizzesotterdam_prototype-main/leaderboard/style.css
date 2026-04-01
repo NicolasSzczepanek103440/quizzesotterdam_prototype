@@ -100,4 +100,5 @@ td {
     font-size: 3em;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
